@@ -45,8 +45,7 @@ public class thuchanh1 {
     }
     public static void nguyento(int g){
         int tu = 0;
-        boolean kiemtra;
-        for (int t = 1; t<=g; t++){
+             for (int t = 1; t<=g; t++){
             if(g%t==0) { tu++;}
                         }
         if (tu==2){ System.out.println(g + " la so nguyen to");}
