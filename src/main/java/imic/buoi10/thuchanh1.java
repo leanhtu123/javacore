@@ -33,20 +33,17 @@ public class thuchanh1 {
     }
 
     public static int Fibo(int z) {
-        int[] F = new int[z];
+        int[] F = new int[z+1];
         F[0] = 0;
         F[1] = 1;
-        F[2] = 1;
-        int Fn = 1;
-        for (int k = 2; k < z; k++) {
-            F[k] = F[k - 1] + F[k - 2];
-            Fn = F[k];
+        for (int k = 2; k <= z; k++) {
+        F[k] = F[k - 1] + F[k - 2];
         }
-        return Fn;
+        return F[z-1];
 
     }
 
-    public static void nguyento(int g) {
+    public static void timNguyenTo(int g) {
         int tu = 0;
         for (int t = 1; t <= g; t++) {
             if (g % t == 0) {

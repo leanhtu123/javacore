@@ -1,6 +1,6 @@
 package imic.buoi2;
 
-import imic.Chicken;
+import imic.buoi13.Chicken;
 
 /**
  * Hello world!

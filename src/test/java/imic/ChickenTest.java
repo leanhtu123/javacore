@@ -1,5 +1,6 @@
 package imic;
 
+import imic.buoi13.Chicken;
 import org.junit.Test;
 
 

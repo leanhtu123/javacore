@@ -1,4 +1,4 @@
-package imic;
+package imic.buoi13;
 
 /**
  * Hello world!
