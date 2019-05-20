@@ -24,4 +24,14 @@ public class CuahangTest {
         int kq = Cuahang.tinhdoanhthu("CCTSCTSTTT", "SMSSLSLLSM");
         System.out.println(kq);
     }
+    @Test
+    public void inFullmenu() {
+        Cuahang.inFullmenu();
+    }
+
+    @Test
+    public void inTonghoadon() {
+        int kq = Cuahang.inTonghoadon("CCTSCTSTTT", "SMSSLSLLSM");
+        System.out.println(kq);
+    }
 }

@@ -16,7 +16,7 @@ public class Cuahang {
 
     public static void inmenu() {
         for (Douong mymenu : menu.values()) {
-            System.out.println(mymenu.toString());
+            System.out.println(mymenu.toWrite("S"));
         }
     }
 
@@ -37,6 +37,25 @@ public class Cuahang {
 
             Douong douong = menu.get(ch.toString());
             doanhthu = doanhthu + douong.getPrice(Character.toString(dssize.toCharArray()[i]));
+            i++;
+
+        }
+        return doanhthu;
+    }
+    public static void inFullmenu() {
+        for (Douong mymenu : menu.values()) {
+            System.out.println(mymenu.toprint());
+        }
+    }
+    public static int inTonghoadon(String dsbanhang, String dssize) {
+        int doanhthu = 0;
+        int i=0;
+
+        for (Character ch : dsbanhang.toCharArray()) {
+
+            Douong douong = menu.get(ch.toString());
+            doanhthu = doanhthu + douong.getPrice(Character.toString(dssize.toCharArray()[i]));
+            System.out.println(douong.toWrite(Character.toString(dssize.toCharArray()[i])));
             i++;
 
         }
